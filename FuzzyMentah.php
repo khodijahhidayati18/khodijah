@@ -63,10 +63,10 @@ class FuzzyMentah extends CI_Controller
   		echo "Max Rendah Adalah :";
    		print_r($maxR);
    		echo "<br>";
-   		echo "Max Rendah Normal :";
+   		echo "Max Normal :";
    		print_r($maxN);
    		echo "<br>";
-   		echo "Max Rendah Tinggi :";
+   		echo "MaxTinggi :";
    		print_r($maxT);
    		echo "<br>";
 
