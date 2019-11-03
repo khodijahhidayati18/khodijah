@@ -448,7 +448,7 @@ class Fuzzy extends CI_Controller
 
 		if ($k_sedang !=0 AND $p_baik !=0 AND $tu_sedang !=0){
 			$aprediket[$i]['min']=min($k_sedang, $p_baik, $tu_sedang);
-			$aprediket[$i]['rule']='normal';
+			$aprediket[$i]['rule']='rendah';
 			$aprediket[$i]['ke']='11';
 			$i++;
 		}
@@ -476,14 +476,14 @@ class Fuzzy extends CI_Controller
 
 		if ($k_sedang !=0 AND $p_tidaksehat !=0 AND $tu_banyak !=0){
 			$aprediket[$i]['min']=min($k_sedang, $p_tidaksehat, $tu_banyak);
-			$aprediket[$i]['rule']='rendah';
+			$aprediket[$i]['rule']='normal';
 			$aprediket[$i]['ke']='15';
 			$i++;
 		}
 
 		if ($k_sedang !=0 AND $p_bahaya !=0 AND $tu_sedikit !=0){
 			$aprediket[$i]['min']=min($k_sedang, $p_bahaya, $tu_sedikit);
-			$aprediket[$i]['rule']='rendah';
+			$aprediket[$i]['rule']='normal';
 			$aprediket[$i]['ke']='16';
 			$i++;
 		}
@@ -519,7 +519,7 @@ class Fuzzy extends CI_Controller
 
 		if ($k_ramai !=0 AND $p_baik !=0 AND $tu_banyak !=0){
 			$aprediket[$i]['min']=min($k_ramai, $p_baik, $tu_banyak);
-			$aprediket[$i]['rule']='rendah';
+			$aprediket[$i]['rule']='normal';
 			$aprediket[$i]['ke']='21';
 			$i++;
 		}
@@ -534,7 +534,7 @@ class Fuzzy extends CI_Controller
 
 		if ($k_ramai !=0 AND $p_tidaksehat !=0 AND $tu_sedang !=0){
 			$aprediket[$i]['min']=min($k_ramai, $p_tidaksehat, $tu_sedang);
-			$aprediket[$i]['rule']='normal';
+			$aprediket[$i]['rule']='tinggi';
 			$aprediket[$i]['ke']='23';
 			$i++;
 		}
@@ -548,7 +548,7 @@ class Fuzzy extends CI_Controller
 
 		if ($k_ramai !=0 AND $p_bahaya !=0 AND $tu_sedikit !=0){
 			$aprediket[$i]['min']=min($k_ramai, $p_bahaya, $tu_sedikit);
-			$aprediket[$i]['rule']='tinggi';
+			$aprediket[$i]['rule']='normal';
 			$aprediket[$i]['ke']='25';
 			$i++;
 		}
